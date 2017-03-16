@@ -18,6 +18,15 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import curso
-import partner
-import wizard
+from openerp.osv import osv, fields
+
+class res_partner(osv.Model):
+    _inherit='res.partner'
+    
+    _columns={
+        'instructor': fields.boolean('Instructor'),
+    }
+    
+    _defaults={
+        'instructor':False,
+    }

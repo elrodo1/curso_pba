@@ -25,7 +25,10 @@
     'depends': ['base'],
     'author':'Rodo',
     'description': 'Modulo de pruebas para cuerso',
-    'data':['views/course_view.xml'],
+    'data':['views/course_view.xml',
+        'views/partner_view.xml',
+        'openacademy_workflow.xml',
+        'wizard/create_attendee_view.xml'],
     'installable': True,
     'auto_install': False,
 }
